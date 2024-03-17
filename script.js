@@ -52,7 +52,10 @@ window.onload = (event) => {
 
 function renderKeys(sc, desc) {
   // Extract each key
-  const keys = sc.split("-");
+  let keys = sc.split("-");
+  if (keys.length === 1) {
+    keys = sc.split("–")
+  }
   //console.log(keys);
 
   // Create shortcut row
