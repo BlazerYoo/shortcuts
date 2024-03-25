@@ -10,7 +10,7 @@ const options = {
   isCaseSensitive: false,
   includeScore: true,
   shouldSort: true,
-  keys: ['sc']
+  keys: ['sc', 'desc']
 };
 
 const fuse = new Fuse(shortcuts, options);
